@@ -60,13 +60,15 @@
   <version>2.6.1</version>
 </dependency>
 </dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+				 <mainClass>com.flight.FlightReservationSystemApplication</mainClass>
+				 <mainClass>com.flight.SwaggerApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -75,7 +77,8 @@
 					</excludes>
 				</configuration>
 			</plugin>
-		</plugins>
+  </plugins>
+		<finalName>Flight_Reservation_System</finalName>
 	</build>
 
 </project>
